@@ -1,0 +1,41 @@
+<%= form_with(model: manual, local: true) do |form| %>
+  <% if manual.errors.any? %>
+    <div id="error_explanation">
+      <h4><%= manual.errors.count %> Errors Present.</h4>
+
+      <ul>
+      <% manual.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= form.label :last_name%>
+    <%= form.text_field :last_name%>
+  </div>
+  <div class="field">
+    <%= form.label :mobile_number%>
+    <%= form.text_field :mobile_number%>
+  </div>
+  <div class="field">
+    <%= form.label :course_period%>
+    <%= form.text_field :course_period%>
+  </div>
+  <div class="field">
+    <%= form.label :start_date%>
+    <%= form.text_field :start_date%>
+  </div>
+  <div class="field">
+    <%= form.label :payment_type%>
+    <%= form.text_field :payment_type%>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

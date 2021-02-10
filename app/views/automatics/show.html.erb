@@ -1,0 +1,40 @@
+<div class="row justify-content-center">
+  <div class="col-3">
+    <div class="container">
+
+      <p id="notice"><%= notice %></p>
+
+      <p>
+        <strong>First Name:</strong>
+        <%= @automatic.first_name %>
+      </p>
+
+      <p>
+        <strong>Last Name:</strong>
+        <%= @automatic.last_name %>
+      </p>
+
+      <p>
+        <strong>Mobile Number:</strong>
+        <%= @automatic.mobile_number %>
+      </p>
+
+      <p>
+        <strong>Course period:</strong>
+        <%=@automatic.course_period %>
+      </p>
+      <p>
+        <strong>Prefered Start Date:</strong>
+        <%=@automatic.start_date %>
+      </p>
+
+      <p>
+        <strong>Payment_type:</strong>
+        <%=@automatic.payment_type %>
+      </p>
+
+      <%= link_to 'Edit', edit_automatic_path(@automatic) %> |
+      <%= link_to 'Back', automatics_path %>
+    </div>
+  </div>
+</div>

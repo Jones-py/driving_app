@@ -3,6 +3,27 @@
 class Users::SessionsController < Devise::SessionsController
   layout 'login/application'# before_action :configure_sign_in_params, only: [:create]
 
+
+private
+def after_sign_in_path_for(user)
+  if session[:user_id] = user.id
+  redirect_to welcome_index_path
+  else
+  user_url
+ end
+end
+
+
+
+
+
+
+
+
+
+
+
+
   # GET /resource/sign_in
   # def new
   #   super

@@ -1,6 +1,6 @@
 <% if current_user %>
   <h3>Welcome: <%= current_user.email %></h3>
-<% else %>
+
 
 
   <div class="row">
@@ -18,7 +18,7 @@
           </ul>
         </div>
         <p>
-          <%= link_to 'Register', manual_index_path, class: 'btn btn-primary sign-up' %>
+          <%=link_to 'Register', manuals_path, class: 'btn btn-primary sign-up'%>
         </p>
       </div>
       <div class="col-lg-3 plan">
@@ -31,11 +31,10 @@
             <li>Automatic Vehicles only</li>
             <li>Theoratical lessons</li>
             <li>Practical driving lessons</li>
-
           </ul>
         </div>
         <p>
-          <%= link_to 'Register', automatic_index_path, class: 'btn btn-primary sign-up' %>
+          <%=link_to 'Register', automatics_path, class: 'btn btn-primary sign-up'%>
         </p>
       </div>
     </div>

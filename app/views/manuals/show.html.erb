@@ -1,0 +1,40 @@
+<div class="row justify-content-center">
+  <div class="col-3">
+    <div class="container">
+
+      <p id="notice"><%= notice %></p>
+
+      <p>
+        <strong>First Name:</strong>
+        <%= @manual.first_name %>
+      </p>
+
+      <p>
+        <strong>Last Name:</strong>
+        <%= @manual.last_name %>
+      </p>
+
+      <p>
+        <strong>Mobile Number:</strong>
+        <%= @manual.mobile_number %>
+      </p>
+
+      <p>
+        <strong>Course period:</strong>
+        <%= @manual.course_period %>
+      </p>
+      <p>
+        <strong>Prefered Start Date:</strong>
+        <%= @manual.start_date %>
+      </p>
+
+      <p>
+        <strong>Payment_type:</strong>
+        <%= @manual.payment_type %>
+      </p>
+
+      <%= link_to 'Edit', edit_manual_path(@manual) %> |
+      <%= link_to 'Back', manuals_path %>
+    </div>
+  </div>
+</div>
